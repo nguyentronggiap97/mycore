@@ -1,0 +1,379 @@
+/**
+ * sidebar-menu override
+ *---------------------------------------*/
+.sidebar-menu .ion {
+    font-size: 20px !important;
+    vertical-align: middle;
+}
+
+.sidebar-menu li > a > span {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.main-header .navbar {
+    border-bottom: 1px solid #efefef;
+}
+
+/* Resize sidebar from 230px to 160px */
+@media(min-width: 768px) {
+    .content-wrapper,
+    .right-side,
+    .main-footer {
+        margin-left: 160px;
+    }
+
+    .main-header > .navbar {
+        margin-left: 160px;
+    }
+
+    .main-header .logo {
+        width: 160px;
+    }
+
+    .main-sidebar, .left-side {
+        width: 160px;
+    }
+
+    .control-sidebar-bg,
+    .control-sidebar {
+        right: -160px;
+        width: 160px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar-open .content-wrapper,
+    .sidebar-open .right-side,
+    .sidebar-open .main-footer {
+        transform: translate(160px, 0);
+    }
+
+/*    .main-sidebar,
+    .left-side {
+        transform: translate(-160px, 0);
+    }*/
+}
+@media (min-width: 768px) {
+    .sidebar-collapse .main-sidebar,
+    .sidebar-collapse .left-side {
+        transform: translate(-160px, 0);
+    }
+
+    .control-sidebar-open .content-wrapper,
+    .control-sidebar-open .right-side,
+    .control-sidebar-open .main-footer {
+        margin-right: 160px;
+    }
+}
+
+/* Right arrow on active menu */
+.skin-white .sidebar-menu > li.active > a:after {
+    right: 0;
+    border: solid 8px transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #ecf0f4;
+    top: 50%;
+    margin-top: -8px;
+}
+
+/**
+ * Add border when mobile size
+ *---------------------------------------*/
+@media (max-width: 767px) {
+    .skin-white .main-header .logo {
+        border-bottom: 1px solid #f3f4f5 !important;
+    }
+}
+
+/**
+ * Fix bug push notification alert
+ *---------------------------------------*/
+body > .pgn-wrapper {
+    z-index: 9000 !important;
+}
+
+/**
+ * Fix datatables scroll background color
+ *---------------------------------------*/
+.dt-bootstrap .col-sm-12 {
+    overflow-x: auto !important;
+}
+
+/**
+ * Hide footer when no-padding
+ *---------------------------------------*/
+.main-footer.no-padding {
+    display: none !important;
+}
+
+/**
+ * Fix heading height
+ *---------------------------------------*/
+.bg-primary {
+    height: 108px;
+}
+
+/**
+ * Fix bug datepicker popup
+ *---------------------------------------*/
+.form-datepicker {
+    overflow-y: inherit !important;
+}
+
+@media (min-width: 989px) {
+    .form-datepicker {
+        height: 50px !important;
+    }
+}
+
+/**
+ * Upload module style
+ *---------------------------------------*/
+a.btn_upload_file, a.btn_upload_image {
+    margin-top: 0px;
+}
+
+/**
+ * Add grid layout no padding left or right
+ *  *-left: no padding left
+ *  *-right: no padding right
+ *---------------------------------------*/
+
+ @media (min-width: 1200px) {
+    .col-lg-left {
+        padding-left: 0px !important;
+    }
+    
+    .col-lg-right {
+        padding-right: 0px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-left {
+        padding-left: 0px !important;
+    }
+    
+    .col-md-right {
+        padding-right: 0px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-sm-left {
+        padding-left: 0px !important;
+    }
+    
+    .col-sm-right {
+        padding-right: 0px !important;
+    }
+}
+
+/**
+ * Tab header button style
+ *---------------------------------------*/
+.btn-tab-header {
+    margin-top:8px;
+    margin-right:8px;
+}
+
+.btn-margin-r {
+    margin-right:12px;
+}
+
+.btn-margin-l {
+    margin-left:12px;
+}
+
+.btn-action {
+    display:inline;
+    padding:2px 5px 3px 5px;
+    margin-right:5px;
+}
+
+.btn-icon {
+    align-items: center;
+    width: auto;
+    margin: 0;
+    background: none;
+    color: #555d66;
+    overflow: hidden;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.dropdown-margin {
+    margin-top: 8px !important;
+}
+
+.box.without-border {
+    border-top-color: transparent;
+}
+
+.box.with-top {
+    margin-top: 15px;
+}
+
+.box-label label {
+    display: block !important;
+}
+
+.box-label .text-muted {
+    font-style: italic;
+}
+
+.box-command {
+    z-index: 9;
+    padding: 15px 10px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e4e7 !important;
+}
+
+.box-header.box-command > .box-tools {
+    top: 3px;
+}
+
+.box-header.box-command > .box-tools-r {
+    left: 10px;
+}
+
+.form-group label.required:after {
+    content: "*";
+    color: #fc6868;
+    font-weight: 700;
+    display: inline-block;
+}
+
+ul.files_container {
+    overflow: auto;
+    min-height: 150px;
+}
+
+/**
+ * Fix tab style
+ *---------------------------------------*/
+.nav-tabs.profile {
+    background-color: #fafafa !important;
+    border-bottom: none;
+}
+
+.nav-tabs.profile > li > a {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1px; /* .007px;*/
+    color: #626262;
+}
+
+.nav-tabs.profile > li > a:hover {
+    color: #606060;
+    background-color: transparent;
+    border-color: transparent;;
+}
+
+.nav-tabs.profile > li:not(.title-tab):after {
+    background-color: #606060;
+}
+
+.nav-tabs.profile > li.active > a, .nav-tabs.profile > li.active > a:active, .nav-tabs.profile > li.active > a:hover, .nav-tabs.profile > li.active > a:focus {
+    color: #333333;
+    border-bottom: 2px solid #606060;
+}
+
+/**
+ * Content header toolbar
+ *---------------------------------------*/
+.content-header > .toolbar-item {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    border-radius: 2px;
+}
+
+.content-header > .toolbar-item > .btn-group {
+    margin-right: 10px;
+}
+
+/**
+ * Fix cover style
+ *---------------------------------------*/
+.profile2 > .bg-primary .col-md-9 {
+    margin-top: 15px;
+}
+
+/**
+ * Fix notification style
+ *---------------------------------------*/
+.pgn-wrapper>.pgn:not(:last-child)>div {
+    margin-bottom: 10px;
+}
+
+/**
+ * Editor style
+ *---------------------------------------*/
+.editor-wrapper {
+    position: relative;
+    padding: 50px 0;
+
+    flex-basis: 100%;
+    flex: 1 1 auto;
+    font-size: 22px;
+    font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+    line-height: 1.8;
+    color: #111;
+}
+
+.editor-inner {
+    max-width: 80%; /* 780px */
+    margin: 0 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-inner .editable {
+    outline: 0;
+}
+
+.sidebar-panel {
+    overflow: hidden;
+    height: auto;
+    max-height: none;
+    background: #fff;
+    border-left: 1px solid #e2e4e7;
+    border-right: 1px solid #e2e4e7;
+}
+
+.sidebar-panel .box {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.sidebar-panel .box:not(:last-child) {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.sidebar-panel .box-body, .sidebar-panel .box-header {
+    padding: 10px 15px;
+}
+
+.editor-main {
+
+}
+
+.editor-sidebar {
+    
+}
+

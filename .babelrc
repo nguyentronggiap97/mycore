@@ -1,0 +1,54 @@
+{
+    "plugins": [
+        [ 
+            "babel-plugin-root-import", {
+                "paths": [
+                    {
+                        "rootPathPrefix": "@root",
+                        "rootPathSuffix": "./resources/admin"
+                    },
+                    {
+                        "rootPathPrefix": "@app",
+                        "rootPathSuffix": "./resources/admin"
+                    },
+                    {
+                        "rootPathPrefix": "@admin",
+                        "rootPathSuffix": "./resources/admin"
+                    },
+                    {
+                        "rootPathPrefix": "@components",
+                        "rootPathSuffix": "./resources/admin/components"
+                    },
+                    {
+                        "rootPathPrefix": "@helpers",
+                        "rootPathSuffix": "./resources/admin/helpers"
+                    },
+                    {
+                        "rootPathPrefix": "@layouts",
+                        "rootPathSuffix": "./resources/admin/layouts"
+                    },
+                    {
+                        "rootPathPrefix": "@services",
+                        "rootPathSuffix": "./resources/admin/services"
+                    },
+                    {
+                        "rootPathPrefix": "@store",
+                        "rootPathSuffix": "./resources/admin/store"
+                    },
+                    {
+                        "rootPathPrefix": "@views",
+                        "rootPathSuffix": "./resources/admin/views"
+                    },
+                    {
+                        "rootPathPrefix": "@widgets",
+                        "rootPathSuffix": "./resources/admin/widgets"
+                    },
+                    {
+                        "rootPathPrefix": "@",
+                        "rootPathSuffix": "./resources/admin"
+                    }
+                ]
+            }
+        ]
+    ]
+}
