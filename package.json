@@ -39,7 +39,7 @@
     },
     "dependencies": {
         "admin-lte": "^2.4.10",
-        "bootstrap-vue": "^1.5.1",
+        "bootstrap-vue": "^2.16.0",
         "font-awesome": "^4.7.0",
         "ionicons": "^4.5.8"
     }
